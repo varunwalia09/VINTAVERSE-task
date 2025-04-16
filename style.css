@@ -1,0 +1,302 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /* background-color: #121212; */
+    color: white;
+    overflow: hidden;
+}
+.vertical-divider {
+    width: 1px;
+    height: 70px; /* Match navbar height or less */
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 0 20px; /* space on both sides of the divider */
+}
+
+.navbar-left,
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+/* Add a bottom border with color and thickness */
+}
+
+.navbar {
+    font-family: Plus Jakarta Sans;
+    /* background-color: #333; */
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 1320px;
+    height: 70.5px;
+    left: 300px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 10;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1320px;
+    height: 70.5px;
+    margin-left: 300px;
+    padding-left: 0;
+}
+
+.navbar-content a {
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar-content a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.navbar-content button {
+    background-color: #FD5B38;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+
+.logo {
+    font-family: Plus Jakarta Sans;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    /* this is for logo niche bottom sy bahar  */
+    margin-right: -60px;
+    text-decoration: none;
+    width: 251.85px;
+    height: 50px;
+    top: 11.99px;
+    left: 320.15px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 136.5px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+   
+}
+
+.nav-links {
+    text-decoration: none;
+    font-family: Plus Jakarta Sans;
+    width: 106px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    list-style: none;
+    letter-spacing: 1px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.nav-links a {
+    margin: 0 16px;
+}
+.nav-links li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+}
+.contact-button {
+    font-family: Plus Jakarta Sans;
+    background-color: #FD5B38;
+    color:#FFFFFF;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 133px;
+    height: 42px;
+    top: 13.99px;
+    left: 1144px;
+    border-radius: 5px;
+    margin-bottom: -10px;
+}
+
+.right-button {
+    width: 133px;
+    height: 42px;
+    top: 13.99px;
+    left: 1144px;
+    border-radius: 5px;
+   margin-right: 50px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1320px) {
+    .navbar-content {
+        width: 100%;
+        margin-left: 0;
+        padding: 0 20px;
+    }
+     .nav-links a{
+        margin: 0 10px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .navbar-content {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+    .navbar-content a, .navbar-content button {
+        padding: 10px;
+    }
+    .logo {
+        margin-right: 0;
+    }
+    .nav-links {
+        margin: 0;
+    }
+    .right-button{
+        margin-left: 0;
+    }
+}
+
+.main-content {
+    /* padding-top: 100px; */  /* for top to bottom margin */
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Changed to flex-start to align text left */
+    width: 1920px;
+            height: 1196px;
+            /* background-image: url(2.png);
+            background-size: cover;
+            background-position: center;
+            opacity: 70%;
+            text-align: left; */
+            padding-left: 20px;
+          color: white;
+        
+           background-color: #121212;
+           overflow: hidden;
+    /* width: 1320px;
+    height: 500.75px;
+    top: 387.63px;
+    left: 300px; */
+}
+.main-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(2.png);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    z-index: 0;
+}
+.main-content {
+    position: relative;
+    z-index: 1;
+    /* other styles */
+}
+
+.main-heading {
+    font-size: 105px;
+    font-weight: 600;
+    /* line-height: 136.5px; */
+    letter-spacing: 0%;
+    margin-bottom: 0;
+    color: white;
+    /* vertical-align: middle; */
+    margin-left: 300px; /* Removed left margin, so it aligns with padding */
+    margin-top: 0px;
+    margin-bottom: -80px;
+    position: relative;
+    
+}
+
+.sub-heading {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28.8px;
+    letter-spacing: 0%;
+    /* vertical-align: middle; */
+    color: #FFFFFF;
+    margin-left: 1060px;
+    margin-top: 0;
+   width: 411.4px;
+   height: 78.6px;
+   /* margin-bottom: 30px; */
+   /* top: 189.6px; */
+   left: 791.38px;
+   bottom: 0;
+   right: 0;
+  
+   
+  
+
+}
+
+.projects-completed {
+    font-family: Plus Jakarta Sans;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 30.1px;
+    letter-spacing: 0%;
+    color: white;
+    bottom: -30px;
+    right: 0;
+    margin-top: 100px;
+    margin-left: 1400px;
+    width: 192.23px;
+    height: 52px;
+    /* margin-left: 0; */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+    .navbar-left, .navbar-right {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .nav-links {
+        flex-direction: column;
+    }
+    .nav-links li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .main-heading{
+       font-size: 36px;
+    }
+    .sub-heading{
+        font-size: 16px;
+    }
+     .main-content {
+        padding-left: 10px;
+    }
+}
+/* </br> */
