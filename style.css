@@ -1,9 +1,11 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    /* background-color: #121212; */
+    background-color: #121212;
     color: white;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
+  
 }
 .vertical-divider {
     width: 1px;
@@ -17,7 +19,6 @@ body {
     display: flex;
     align-items: center;
 }
-
 .navbar {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 /* Add a bottom border with color and thickness */
@@ -27,17 +28,21 @@ body {
     font-family: Plus Jakarta Sans;
     /* background-color: #333; */
     overflow: hidden;
-    position: fixed;
+    /* position: fixed; */
+    position: relative;
+    
     top: 0;
     width: 1320px;
     height: 70.5px;
     left: 300px;
+   
     display: flex;
     justify-content: flex-start;
     align-items: center;
     z-index: 10;
 }
 
+   
 .navbar-content {
     display: flex;
     justify-content: space-between;
@@ -217,6 +222,10 @@ body {
     /* other styles */
 }
 
+.main-content img {
+    margin-top: 80px;
+    margin-left: 300px;
+  }
 .main-heading {
     font-size: 105px;
     font-weight: 600;
@@ -227,7 +236,7 @@ body {
     /* vertical-align: middle; */
     margin-left: 300px; /* Removed left margin, so it aligns with padding */
     margin-top: 0px;
-    margin-bottom: -80px;
+    margin-top: 10px;
     position: relative;
     
 }
@@ -243,7 +252,7 @@ body {
     margin-top: 0;
    width: 411.4px;
    height: 78.6px;
-   /* margin-bottom: 30px; */
+   margin-top: -310px;
    /* top: 189.6px; */
    left: 791.38px;
    bottom: 0;
@@ -300,3 +309,622 @@ body {
     }
 }
 /* </br> */
+
+/* Existing CSS */
+
+/* Existing CSS */
+
+.main-content-section-2 {
+    padding: 40px 20px;
+    /* background-color: #f9f9f9; /* Example background */
+}
+
+.main-container-2 {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    align-items: stretch;
+
+}
+
+.left-section-2 {
+    flex: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 40px;
+}
+
+.text-with-background {
+    background-image: url('5.png'); /* Replace with your image path */
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: cover;
+    background-position: center;
+    font-size: 555px;
+    font-weight: bold;
+    padding: 20px; /* Add some padding around the text */
+    margin-right: 5px; /* Add space to the right of the text */
+
+}
+
+.bottom-info-2 {
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 20px; */
+}
+
+.info-box-2 {
+    text-align: left;
+    padding-top: 15px; /* Space between border and content */
+    width: 45%; /* Optional: keep them sized nicely */
+
+}
+.info-box-3 {
+    text-align: left;
+    padding-top: 15px; /* Space between border and content */
+    width: 45%; /* Optional: keep them sized nicely */
+    margin-left: 330px;
+
+}
+.info-number-2 {
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Light border on top */
+    padding-top: 10px; /* space between border and text */
+    display: inline-block; /* so border fits content only */
+    width: 250%;
+    font-size: 2.5em;
+    font-weight: normal;
+    margin-bottom: 5px;
+    margin-top: -40px;
+}
+.info-number-3 {
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Light border on top */
+    padding-top: 10px; /* space between border and text */
+    display: inline-block; /* so border fits content only */
+    width: 250%;
+    font-size: 2.5em;
+    font-weight: normal;
+    margin-bottom: 5px;
+    margin-top: -40px;
+    margin-left: 25px;
+}
+
+
+.info-text-2 {
+    font-size: 0.8em;
+    color: #aaa;
+    white-space: nowrap;
+}
+.info-text-3 {
+    font-size: 0.8em;
+    color: #aaa;
+    margin-left: 15px;
+    white-space: nowrap;
+}
+.info-icon {
+    width: 49.21px;     /* Small icon */
+    height: 44.97px;
+    transform: rotate(-90deg);
+}
+.info-icon-2 {
+    width: 49.21px;     /* Small icon */
+    height: 44.97px;
+    transform: rotate(-90deg);
+}
+
+
+.middle-section-2 {
+    flex: 40%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* margin-right: 80px; */
+}
+
+.main-text-2 {
+    font-size: 2em;
+    margin-top: -100px;
+    margin-bottom: 20px;
+    line-height: 40px;
+    font-weight: 600;
+    white-space: nowrap;
+    /* margin-right: 100px; */
+}
+
+.sub-text-2 {
+    color: white;
+    margin-bottom: 80px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+
+}
+.more-about-us-button-2 {
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+}
+
+
+/* .more-about-us-button-2:hover {
+    background-color: #cc5200;
+} */
+
+.right-section-2 {
+    flex: 30%;
+    padding-left: 20px;
+}
+
+.right-image-2 {
+    border-radius: 5px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.right-image-2 img {
+    height: 589.84px;
+    width: 378.66px;
+    left: 957.33px;
+    object-fit: cover;
+    margin-top: 150px;
+}
+
+@media screen and (max-width: 768px) {
+    .main-container-2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-section-2,
+    .middle-section-2,
+    .right-section-2 {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .bottom-info-2 {
+        flex-direction: column;
+    }
+}
+/* web designer and developer */
+.text-effect-horizontal-section {
+    /* Add any section-specific styling here if needed */
+    padding: 20px; /* Example padding */
+   
+  }
+
+  .text-effect-horizontal {
+    position: relative; /* For absolute positioning of foreground */
+    font-size: 8.7em; /* Adjust as needed */
+    font-weight: bold;
+    white-space: nowrap; /* Keep text on one line */
+  }
+
+  .background-layer {
+    color: #ccc; /* Color for the background/outlined text */
+  }
+
+ 
+
+  .background-text {
+    -webkit-text-stroke: 1px #666; /* Adjust outline */
+    color: transparent;
+    opacity: 0.7; /* Adjust fade */
+    margin-right: 0.5em; /* Space between the words */
+  }
+
+  .foreground-text {
+    margin-right: 0.5em; /* Increased from 0.5em */
+  }
+  
+
+  .separator {
+    margin-right: 0.5em; /* Space around the asterisk */
+    margin-left: 0.5em;
+   
+  }
+
+  .background-layer .separator {
+    -webkit-text-stroke: 1px #666;
+    color: transparent;
+    opacity: 0.7;
+  }
+  
+  .foreground-layer::before,
+  .foreground-layer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 15%; /* Adjust width of the effect */
+    height: 100%;
+    opacity: 0.2; /* Adjust opacity of the light */
+  }
+  
+  .foreground-layer::before {
+    left: 0;
+    background: linear-gradient(to left, transparent 0%, rgba(255, 255, 255, 0.8) 80%, rgba(255, 255, 255, 0.8) 100%); /* White light on left */
+  }
+  
+  .foreground-layer::after {
+    right: 0;
+    background: linear-gradient(to right, transparent 0%, rgba(255, 255, 255, 0.8) 80%, rgba(255, 255, 255, 0.8) 100%); /* White light on right */
+  }
+
+
+  /* cards section */
+  card-slider-container {
+    max-width: 100%; /* Adjust as needed */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
+    cursor: pointer;
+    padding: 20px 0; /* Add some vertical padding */
+    margin-top: 50px;
+}
+
+.card-slider-wrapper {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent cards from wrapping to the next line */
+    gap: 10px;
+}
+
+.card {
+    color: #eee; /* Light text color */
+    border-radius: 8px;
+    padding: 20px;
+    margin-right: 20px; /* Spacing between cards */
+    width: 450px; /* Adjust card width */
+    height: 350px;
+    box-sizing: border-box;
+    text-align: left;
+    flex: 0 0 auto; /* Don't grow or shrink, take up defined width */
+    margin-top: 80px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+
+}
+
+  
+.parent-of-h2 { /* Replace with the actual class or selector of the parent element */
+    margin-left: 150px;
+    color: #FD5B38;
+    font-weight: normal;
+font-style: normal;
+text-decoration: none;
+    font-size: 10px;
+    line-height: 21px;
+    margin-top: 80px;
+  }
+  .parent-of-h1 {
+    color: white;
+    font-weight: normal;
+font-style: normal;
+text-decoration: none;
+    font-size: 20px;
+    line-height: 21px;
+    margin-left: 150px;
+  }
+  .card-title-2 span {
+    font-weight: normal; /* Override bold for spans */
+    font-weight: 50;
+  
+  }
+.card:last-child {
+    margin-right: 0; /* Remove margin from the last card */
+}
+
+.card-icon {
+    font-size: 2em; /* Example icon size */
+    margin-bottom: 10px;
+    color: #aaa;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #eee;
+}
+
+.card-description {
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.card-link {
+    color: #aaa;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card-link:hover {
+    color: #fff;
+}
+
+.card-border {
+    width: 100%;
+    height: 2px; /* Border thickness */
+    background: linear-gradient(to right, black, white); /* Gradient from black to white */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+    margin-top: 90px; /* Space between card content and border */
+  }
+
+
+  /* our portfolio */
+ /* Base styles for the entire portfolio section */
+.portfolio-section {
+    background-color: #000;
+    color: #fff;
+    padding: 40px;
+    font-family: sans-serif;
+  }
+  
+  /* Top Bar Styles */
+  .top-bar {
+    margin-bottom: 40px;
+  }
+  
+  .selected-works-container {
+    display: flex; /* Enable flexbox for positioning items */
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the left */
+  }
+  
+  /* Style for the "OUR PORTFOLIO" h1 */
+  .ole-portfolio-label {
+    font-size: 20px; /* Adjust size as needed */
+    font-weight: normal;
+    color: #FD5B38; /* Or your desired color */
+    margin-bottom: 5px; /* Add a small margin below the h1 */
+    margin-top: 50px;
+    margin-left: 340px;
+  }
+  
+  /* Style for the "SELECTED WORKS." h2 */
+  .selected-works-title {
+    font-size: 30px; /* Adjust size as needed */
+    color: white; /* Or your desired color */
+    margin-top: 0; /* Remove default top margin of h2 */
+    margin-bottom: 10px; /* Add some spacing below the h2 */
+    margin-left:350px ;
+  }
+  
+  .view-all-link {
+    color: white;
+    text-decoration: none;
+    border: 1px solid #aaa;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    display: inline-flex; /* For aligning text and arrow */
+    align-items: center;
+    gap: 5px;
+    border-radius: 50px;
+    margin-left: 1480px;
+  }
+  
+  .view-all-link .arrow-icon {
+    font-size: 1em;
+    line-height: 1;
+  }
+  
+  .view-all-link:hover {
+    color: #fff;
+    border-color: #fff;
+  }
+  
+  /* Main Content Styles */
+  .main-content {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  /* Left Sidebar Styles */
+  .left-sidebar {
+    width: 150px;
+    margin-right: 40px;
+  }
+  
+  .filter-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .filter-item {
+    padding: 10px 0;
+    cursor: pointer;
+    color: #aaa;
+  }
+  
+  .filter-item.active {
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .filter-item:hover {
+    color: #fff;
+  }
+  
+  /* Project Display Styles */
+  .project-display {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .project-info {
+    margin-right: 160px;
+    
+  }
+  
+  .project-title {
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-left: 380px;
+  }
+  
+  .project-type {
+    color: #aaa;
+    margin-bottom: 30px;
+    margin-left: 380px; 
+  }
+  
+  .project-details {
+    list-style: none;
+    margin-left: 240px;
+    margin-bottom: 130px;
+    margin-top: 150px;
+  }
+  
+  .project-details li {
+    padding: 5px 0;
+    color: #ccc;
+     /* margin-right: 100px; */
+  }
+  
+  .figma-label {
+    color: #aaa;
+    border: 1px solid #aaa;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 0.8em;
+    text-transform: uppercase;
+  }
+  
+  .project-images {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .project-images img {
+    width: 950px;
+    height: 645px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      display: flex;
+      justify-content: center; 
+      align-items: center; 
+      margin-left: -180px;
+      margin-top: -80px;
+    
+     
+  }
+  
+  /* Navigation Arrows Styles */
+  .navigation-arrows {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .arrow {
+    background: transparent;
+    color: #c50505;
+    border: 1px solid #aaa;
+    padding: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.2em;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .arrow:hover {
+    color: #fff;
+    border-color: #fff;
+  }
+  
+  .navigation-arrows .next-arrow {
+    left: auto;
+    right: 20px;
+  }
+  
+  /* Force h2 directly below h1 */
+  .selected-works-container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align to the left */
+  }
+  
+  .ole-portfolio-label {
+    /* Existing styles */
+    margin-bottom: 5px; /* Add spacing below h1 */
+  }
+  
+  .selected-works-title {
+    /* Existing styles */
+    margin-top: 0; /* Remove default top margin of h2 */
+    margin-bottom: 10px; /* Add spacing below h2 */
+  }
+  
+  .view-all-link {
+    /* Existing styles */
+    margin-top: 15px; /* Add spacing above the link */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 900px) {
+    .main-content {
+      flex-direction: column;
+    }
+    .left-sidebar {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .project-display {
+      flex-direction: column;
+    }
+    .project-info {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+    .project-images {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .project-images img {
+      min-width: 80%;
+    }
+    .navigation-arrows {
+      top: auto;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      flex-direction: row;
+    }
+    .selected-works-container {
+      align-items: flex-start; /* Keep left alignment on smaller screens */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .top-bar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .ole-portfolio-label {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    .selected-works-container {
+      margin-bottom: 20px;
+    }
+    .selected-works-title {
+      font-size: 1.2em;
+      margin-right: 10px;
+    }
+  } */
